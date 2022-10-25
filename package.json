@@ -1,0 +1,19 @@
+{
+  "name": "azure-back-end-teste-final",
+  "version": "1.0.0",
+  "description": "TESTE DE FINAL DE DEPLOY NO AZURE DE APLICAÇÃO WEB BACK-END. ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "AZURE",
+    "DEPLOY",
+    "CI/CD"
+  ],
+  "author": "CRISTIANO CORREA DE MORAES",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
