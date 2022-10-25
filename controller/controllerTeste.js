@@ -16,19 +16,28 @@ router.get('/read', (req, res)=>{
 
 router.post('/create', (req, res)=>{
     res.status(200).json(
-        {msg:"DEPLOY AZURE: ROTA DE GRAVAÇÃO DE DADOS"} 
+        {
+            msg:"DEPLOY AZURE: ROTA DE GRAVAÇÃO DE DADOS",
+            dataHora: dataHora(),
+        } 
     );
 });
 
 router.put('/update', (req, res)=>{
     res.status(200).json(
-        {msg:"DEPLOY AZURE: ROTA DE ATUALIZAÇÃO DE DADOS"} 
+        {
+            msg:"DEPLOY AZURE: ROTA DE ATUALIZAÇÃO DE DADOS",
+            dataHora: dataHora(),
+        } 
     );
 });
 
 router.delete('/delete', (req, res)=>{
     res.status(200).json(
-        {msg:"DEPLOY AZURE: ROTA DE EXCLUSÃO DE DADOS"} 
+        {
+            msg:"DEPLOY AZURE: ROTA DE EXCLUSÃO DE DADOS",
+            dataHora: dataHora(),
+        } 
     );
 });
 
