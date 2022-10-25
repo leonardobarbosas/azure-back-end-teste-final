@@ -1,10 +1,16 @@
 const express = require('express');
+const dataHora = require('../helpers/funcoes');
+
+console.log(dataHora())
 
 const router = express.Router();
 
 router.get('/read', (req, res)=>{
     res.status(200).json(
-        {msg:"DEPLOY AZURE: ROTA DE LEITURA DE DADOS"} 
+        {
+            msg:"DEPLOY AZURE: ROTA DE LEITURA DE DADOS",
+            dataHora: dataHora(),
+        } 
     );
 });
 
